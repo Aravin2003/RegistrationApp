@@ -29,7 +29,7 @@ This app runs on node.js and uses mongo Atlas for database.
  ##Data models and schema:
    -> data model was created for STUDENTS, COURSES and ADMINS.
    
-   ADMIN***::
+                              ADMIN***::
        const adminschema= new mongoose.Schema(
     {
         username:
