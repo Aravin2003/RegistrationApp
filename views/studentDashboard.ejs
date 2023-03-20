@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+</head>
+<body>
+    <%if(success&&success.length){%>
+        <div id="success-flash">
+            <p id="success-flash-message"> <%=success%></p>
+        </div>
+        <%}%>
+    <h1>Dashboard</h1>
+    <h2>Register for a course</h2>
+    <form action="/dashboardStudent" method="post">
+        <label for="courses">Choose a course:</label>
+        <select name="course" id="courses">
+          <% for(let course of courses){ %>
+            <option value=<%=course.name%>><%=course.name%> By <%=course.teacher %></option>
+            <% } %>
+        </select>
+        <br><br>
+        <button>Apply</button>
+      </form>
+      <h2>Your registrations</h2>
+      <ul>
+        <% for(let course of student.courses){ %>
+            <li><%=course%></li>
+            <%}%>
+      </ul>
+      <br><br>
+    <a href="/logout"><button>Logout</button></a>
+</body>
+</html>

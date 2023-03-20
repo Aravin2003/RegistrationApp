@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SASTRA-Register</title>
+</head>
+<body>
+    <%if(success&&success.length){%>
+        <div id="success-flash">
+            <p id="success-flash-message"> <%=success%></p>
+        </div>
+        <%}%>
+    <h1>SASTRA REGISTRATION</h1>
+    <h2>Register</h2>
+     <form method="post" action="/register">
+        <input type="text" placeholder="Name" name="name">
+        <input type="text" placeholder="Register Number" name="regno">
+        <input type="date" name="date">
+        <input type="password" placeholder="Password" name="password" minlength="6" maxlength="12">
+        <button>Register</button>
+     </form>
+</body>
+</html>

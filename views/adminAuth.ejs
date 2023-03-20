@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SASTRA-Login</title>
+</head>
+<body>
+    <%if(success&&success.length){%>
+        <div id="success-flash">
+            <p id="success-flash-message"> <%=success%></p>
+        </div>
+        <%}%>
+    <h1>Administrator</h1>
+    <h2>Login</h2>
+    <form method="post" action="/adminAuth">
+        <input type="text" placeholder="Username" name="username">
+        <input type="password" placeholder="Password" password="password">
+        <button>Login</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+</head>
+<body>
+    <%if(success&&success.length){%>
+        <div id="success-flash">
+            <p id="success-flash-message"> <%=success%></p>
+        </div>
+        <%}%>
+        <h1>Dashboard</h1>
+        <a href="/createCourse"><button>Create course</button></a>
+        <a href="/deleteCourse"><button>Delete course</button></a>
+        <h2>Courses</h2>
+        <ul>
+            <% for(let course of courses) { %>
+                <li><b><%=course.name %></b>-<%=course.teacher %></li>
+                <% } %>
+        </ul>
+        <h2>Students</h2>
+        <ul>
+            <% for(let student of students) { %>
+                <li><b><%=student.name %></b>:
+                <br>
+                <ul>
+                   <li><b>Register number :</b><%=student.regNo %></li>
+                   <li><b>Date of birth and Registration time:</b> <%=student.dob %></li>
+                   <ul>
+                    <% for(let studentcourse of student.courses){ %>
+                        <li><%=studentcourse%></li>
+                        <% } %>
+                   </ul>
+                </ul>
+                </li>
+                <% } %>
+        </ul>
+        <a href="/removeStudent"><button>Remove Student</button></a>
+        <a href="/logoutAdmin"><button>Logout</button></a>
+</body>
+</html>

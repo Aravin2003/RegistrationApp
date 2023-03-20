@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course create</title>
+</head>
+<body>
+    <%if(success&&success.length){%>
+        <div id="success-flash">
+            <p id="success-flash-message"> <%=success%></p>
+        </div>
+        <%}%>
+    <h1>Create Course</h1>
+    <form method="post" action="/createCourse">
+        <input type="text" placeholder="Course name" name="name">
+        <input type="text" placeholder="Taught by" name="teacher">
+        <button>Create</button>
+    </form>
+</body>
+</html>
+
