@@ -151,15 +151,20 @@ This app runs on node.js and uses mongo Atlas for database.
    "/logout" works for both student and admin as well.
    when this route is hit, the maxAge of the jwt token is set to 1 ms.
    The user is logged out and redirected to "/".
+   
 10.Similarly, admin can login using "/adminAuth".
    On successful verification he is redirected to "/dashboardAdmin".
+   
 11.In the student dashboard all available courses are displayed in a drop down menu and the student and apply directly.
    His course registrations list are updated immediately.
+   
 12.In the admin dashboard, links are provided to :
+
    create course: ("/createCourse");
    delete course: ("/deleteCourse");
    Remove student: ("/removeStudent");
    logout: ("/logout");
+   
 13. In the dashboard all existing courses are displayed.
    All students who have applied are also displayed along with all their details and all the courses they have applied to.
 
