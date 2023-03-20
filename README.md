@@ -26,6 +26,11 @@ This app runs on node.js and uses mongo Atlas for database.
   -> mongoose to connect mongodb to express
   -> path to set static dir. path to access other folders.
   
+  
+  start Command : node index.js
+  Port:9999
+  
+  
  ##Data models and schema:
    -> data model was created for STUDENTS, COURSES and ADMINS.
    
