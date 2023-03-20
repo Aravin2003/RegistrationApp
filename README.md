@@ -164,7 +164,7 @@ This app runs on node.js and uses mongo Atlas for database.
    All students who have applied are also displayed along with all their details and all the courses they have applied to.
 
 
-
+***BELOW***
 ***All routes explained above are implemented with examples of valid and invalid requests.***
 ***Error handling is clearly showcased and all CRUD operations required are also demonstrated.***
 
