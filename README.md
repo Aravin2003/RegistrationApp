@@ -5,17 +5,17 @@ This repo is create regarding the backend assignment provided by the GDSC club o
 This app runs on node.js and uses mongo Atlas for database.
 
 #The following dependencies were installed using npm.
-                   "dependencies": {
-    "bcrypt": "^5.1.0",
-    "connect-flash": "^0.1.1",
-    "cookie-parser": "^1.4.6",
-    "dotenv": "^16.0.3",
-    "ejs": "^3.1.9",
-    "express-session": "^1.17.3",
-    "jsonwebtoken": "^9.0.0",
-    "mongoose": "^7.0.2",
-    "path": "^0.12.7"
-  }
+                  ** "dependencies": {
+                      "bcrypt": "^5.1.0",
+                       "connect-flash": "^0.1.1",
+                          "cookie-parser": "^1.4.6",
+                                "dotenv": "^16.0.3",
+                                   "ejs": "^3.1.9",
+                                        "express-session": "^1.17.3",
+                                           "jsonwebtoken": "^9.0.0",
+                                                "mongoose": "^7.0.2",
+                                                      "path": "^0.12.7"
+                                                    }
   
   -> bcrypt is used to encrypt and salt the password.
   -> connect-flash is used to send flash messages using sessions,
