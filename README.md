@@ -86,7 +86,8 @@ This app runs on node.js and uses mongo Atlas for database.
 
 -> The student's name, regNo, DOB and registered courses are stored.
 
-  COURSES:
+        COURSES***::
+                      
         const courseschema= new mongoose.Schema(
     {
         name:
