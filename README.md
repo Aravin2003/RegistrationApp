@@ -5,7 +5,7 @@ This repo is create regarding the backend assignment provided by the GDSC club o
 This app runs on node.js and uses mongo Atlas for database.
 
 #The following dependencies were installed using npm.
-"dependencies": {
+                   "dependencies": {
     "bcrypt": "^5.1.0",
     "connect-flash": "^0.1.1",
     "cookie-parser": "^1.4.6",
@@ -47,7 +47,7 @@ This app runs on node.js and uses mongo Atlas for database.
 
 --- An admin is given an username and a passowrd to access the portal.
  
-   STUDENT:
+                            STUDENT:
           const studentschema= new mongoose.Schema(
     {
         name:
