@@ -161,8 +161,11 @@ This app runs on node.js and uses mongo Atlas for database.
 12.In the admin dashboard, links are provided to :
 
    create course: ("/createCourse");
+   
    delete course: ("/deleteCourse");
+   
    Remove student: ("/removeStudent");
+   
    logout: ("/logout");
    
 13. In the dashboard all existing courses are displayed.
